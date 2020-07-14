@@ -15,9 +15,6 @@ This repository is just one module from that proyect, and serverless one, just t
 On this repository the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. **The challenge** is **only** use React and its hooks **(No Redux and useReduce this time)**.
 To make this proyect more good looking, I'll use material ui.
 
-### VERSION 2
-Soon...
-
 ### Installing
 
 **1)** clone the repository
