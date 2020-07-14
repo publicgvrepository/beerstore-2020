@@ -1,0 +1,65 @@
+
+.card {
+    width: 150px;                 /* Set width of cards */
+    border: 3px solid #1d436a;    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+  }
+
+.card-header {
+    color: #f3f5f7;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(255, 253, 253);
+    background-color: #1d436a;
+    padding: 5px 10px;
+}
+
+.card-main {
+    display: flex;              /* Children use Flexbox */
+    flex-direction: column;     /* Rotate Axis to Vertical */
+    justify-content: center;    /* Group Children in Center */
+    align-items: center;        /* Group Children in Center (+axis) */
+    padding: 15px 0;            /* Add padding to the top/bottom */
+}
+
+.material-icons {
+    font-size: 36px;
+    color: #1d436a;
+    margin-bottom: 5px;
+  }
+
+  .main-description {
+    color: #1d436a;
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+/*quesale_leaflet.css*/
+
+.leaflet-popup-content {
+    margin: 0px;
+    /*line-height: 1.4;*/
+}
+
+.leaflet-popup-content, .leaflet-popup-content-wrapper {
+    border-radius: 4px;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: white;
+    color: #333;
+    box-shadow: -14px 9px 14px rgba(0,0,0,0.4);
+}
+
+
+.leaflet-popup-content-wrapper {
+    padding: 0px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 12px;
+}

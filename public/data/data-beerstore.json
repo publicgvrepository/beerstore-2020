@@ -1,0 +1,758 @@
+[
+    {
+        "id": 18,
+        "nombre": "Cerveceria Green Island",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.054985232221,
+                -38.9525972152139
+            ]
+        },
+        "direccion": "Córdoba 208",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 19,
+        "nombre": "Filler",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0660895775391,
+                -38.9687524737437
+            ]
+        },
+        "direccion": "Fava 500",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 20,
+        "nombre": "Mr. Fill",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0549852322201,
+                -38.9505613830017
+            ]
+        },
+        "direccion": "Córdoba 414",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 21,
+        "nombre": "Biscanna",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0706600617003,
+                -38.9693405507645
+            ]
+        },
+        "direccion": "Intendente Chaneton 1335",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 22,
+        "nombre": "Oid Mortales",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.1068537901398,
+                -38.9503152435874
+            ]
+        },
+        "direccion": "Belgrano 3437",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 24,
+        "nombre": "Haus",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0458120773905,
+                -38.9592049233758
+            ]
+        },
+        "direccion": "Félix San Martin 890",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 26,
+        "nombre": "Draft Beer",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0630640457719,
+                -38.9519005333133
+            ]
+        },
+        "direccion": "Julio Argentino Roca 251",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 27,
+        "nombre": "Black Hop",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0452702711707,
+                -38.9450585028979
+            ]
+        },
+        "direccion": "Pres. Arturo H. Illia 928",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 28,
+        "nombre": "Valle Negro",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0418638657209,
+                -38.9506781946279
+            ]
+        },
+        "direccion": "Alderete 1250",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 43,
+        "nombre": "Brauer Cervecería",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0561117600061,
+                -38.9547414506672
+            ]
+        },
+        "direccion": "Santa Fe 43",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 23,
+        "nombre": "Barrica Vinoteca",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0449323128327,
+                -38.9506364762122
+            ]
+        },
+        "direccion": "Perito Moreno 376",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "https://scontent.faep9-2.fna.fbcdn.net/v/t1.0-9/18199277_1337471799639696_1619838112486028491_n.png?oh=90071a3b378808a9254fca918334c151&oe=5B43B8F4",
+        "peso": 100
+    },
+    {
+        "id": 44,
+        "nombre": "Camembert",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.056605286465,
+                -38.9491846600417
+            ]
+        },
+        "direccion": "Boulevard España 183",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 63,
+        "nombre": "Morgana",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.2317642639482,
+                -38.9443951245888
+            ]
+        },
+        "direccion": "M.Buratovich 390",
+        "descripcion": "",
+        "localidad": {
+            "id": 3,
+            "nombre": "Plottier",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.2321290443745,
+                    -38.9544994973851
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 64,
+        "nombre": "Let It Beer Neuquén",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0755953262877,
+                -38.9505113208179
+            ]
+        },
+        "direccion": "Belgrano 1185",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 68,
+        "nombre": "Valhalla paraíso cervecero",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0664543579653,
+                -38.9532980619556
+            ]
+        },
+        "direccion": "Salta 152",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 69,
+        "nombre": "Reko Artesanal",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.1133930157203,
+                -38.9503861652004
+            ]
+        },
+        "direccion": "Gral Belgrano 3900",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 70,
+        "nombre": "Be Bop",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0761317680893,
+                -38.9507616313856
+            ]
+        },
+        "direccion": "Belgrano 1204",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 72,
+        "nombre": "India Del Sur",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0589227150524,
+                -38.9658620667777
+            ]
+        },
+        "direccion": "av. Olascoaga 1026",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 73,
+        "nombre": "Berkana",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0541698406795,
+                -38.9497270086429
+            ]
+        },
+        "direccion": "talero 475",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 94,
+        "nombre": "Hasta el Fondo",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0554385255441,
+                -38.9548582554056
+            ]
+        },
+        "direccion": "Bv. 25 de Mayo 273",
+        "descripcion": "Hasta el Fondo, centro de recarga",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 96,
+        "nombre": "Holy Bar de Cervezas",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0622486542313,
+                -38.9534148690708
+            ]
+        },
+        "direccion": "Alte. Brown 162",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 121,
+        "nombre": "Vans Ol cerveza artesanal",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0963879083028,
+                -38.9546992661508
+            ]
+        },
+        "direccion": "Gral. San José de Martin 2661",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 17,
+        "nombre": "BierBaron",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.1127331923032,
+                -38.9358499232836
+            ]
+        },
+        "direccion": "1° de Mayo 3878",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "https://scontent.faep9-2.fna.fbcdn.net/v/t1.0-9/17190882_250863792042030_542609984322461609_n.jpg?oh=843b4a8da86902cac50a92e17ca1c3fc&oe=5B45E959",
+        "peso": 0
+    },
+    {
+        "id": 126,
+        "nombre": "Runas Cervecería Artesanal",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0843339632583,
+                -38.9476201696771
+            ]
+        },
+        "direccion": "Cacique Catriel 682 casi Antártida Argentina",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 127,
+        "nombre": "Burden",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0506454180343,
+                -38.9483335815663
+            ]
+        },
+        "direccion": "Entre Ríos 622",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 128,
+        "nombre": "Beer Point",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.1170461843972,
+                -38.9502902124119
+            ]
+        },
+        "direccion": "Gral. Manuel Belgrano 4152",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "",
+        "peso": 100
+    },
+    {
+        "id": 71,
+        "nombre": "2Catorce-Beer Neuquén",
+        "geom": {
+            "type": "Point",
+            "coordinates": [
+                -68.0550174187274,
+                -38.9544994973844
+            ]
+        },
+        "direccion": "Córdoba 24",
+        "descripcion": "",
+        "localidad": {
+            "id": 1,
+            "nombre": "Neuquén",
+            "provincia": "Neuquén",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -68.0591372917742,
+                    -38.9508617553664
+                ]
+            },
+            "zipcode": "8300"
+        },
+        "link_imagen": "https://scontent.faep9-2.fna.fbcdn.net/v/t1.0-9/16473724_323875254680305_5012772704470884078_n.jpg?oh=df1802bf41e3f6ca331444b07b937a47&oe=5B342D77",
+        "peso": 100
+    }
+]
