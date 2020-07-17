@@ -12,7 +12,7 @@ Frontend was implementing with Redux/React, using Leaflet and OpenStreetMap serv
 This repository is just one module from that proyect, and serverless one, just to expose my first steps on Redux/React, and the combination of differents services and libreries.
 
 ### VERSION 1
-On this repository the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. **The challenge** is **only** use React and its hooks **(No Redux and useReduce this time)**.
+On this repository the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. **The challenge** is **only** use React and its hooks **(No Redux and Context this time)**.
 To make this proyect more good looking, I'll use material ui.
 
 ### VERSION 2
