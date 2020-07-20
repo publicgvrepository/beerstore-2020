@@ -11,12 +11,12 @@ On the begining this was a proyect with backend technologies like DRF, Flask, et
 Frontend was implementing with Redux/React, using Leaflet and OpenStreetMap services.
 This repository is just one module from that proyect, and serverless one, just to expose my first steps on Redux/React, and the combination of differents services and libreries.
 
-### VERSION 1
-On this repository the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. **The challenge** is **only** use React and its hooks **(No Redux and Context this time)**.
+### VERSION 1 (branch version_1)
+On this version the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. **The challenge** is **only** use React and its hooks **(No Redux either Context this time)**.
 To make this proyect more good looking, I'll use material ui.
 
-### VERSION 2
-Soon...
+### VERSION 2 (branch version_2)
+On this version the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. Unlike the previous version, this time I use the React context API. Simulated the first API recovery data to context. Thereafter, I store the data on the client and manipulate that information in the frontend.
 
 ### Installing
 

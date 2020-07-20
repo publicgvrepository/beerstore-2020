@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+// import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { SnackbarProvider } from 'notistack'
+import StyleProvider from './context/StyleContext'
+
 
 ReactDOM.render(
-
     <SnackbarProvider
       maxSnack={3}
       anchorOrigin={{
@@ -14,7 +15,9 @@ ReactDOM.render(
         horizontal: 'right',
       }}>
       <React.StrictMode>
-        <App />
+        <StyleProvider>
+          <App />
+        </StyleProvider>
         </React.StrictMode>
     </SnackbarProvider>,
   document.getElementById('root')

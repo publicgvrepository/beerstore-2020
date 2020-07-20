@@ -2,6 +2,9 @@ import React from 'react'
 import { Map as MapLeaflet, TileLayer } from 'react-leaflet'
 import Marker from '../Marker/Marker'
 import './Map.css'
+import { BeerStoreContext } from '../../context/BeerStoreContext'
+import { SessionContext }  from '../../context/SessionContext'
+
 
 const initialStateMap = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -36,27 +39,19 @@ function mapReducer(state, action) {
 
 const Map = props => {
 
-  const [markers, setMakers] = React.useState([])
-
   const [mapData, mapDispatch] = React.useReducer(mapReducer, initialStateMap)
-
-  const selectedMarker = props.selected
-
-  const isLoading = props.isLoading
+  const beerStoreState = React.useContext(BeerStoreContext)
+  const sessionState = React.useContext(SessionContext)
 
   React.useEffect(() => {
-    setMakers(props.data)
-  },[props.data])
-
-  React.useEffect(() => {
-    if ((props.data.length > 0) && (selectedMarker !== -1)){
-      let coordinates = [props.data[selectedMarker].geom.coordinates[1],props.data[selectedMarker].geom.coordinates[0]]
+    if ((beerStoreState.beerStores.length > 0) && (sessionState.sidebar.selected !== null)){
+      let coordinates = [beerStoreState.beerStores[sessionState.sidebar.selected].geom.coordinates[1],beerStoreState.beerStores[sessionState.sidebar.selected].geom.coordinates[0]]
       mapDispatch({type: 'CENTER_ON', payload: coordinates})
       mapDispatch({type: 'ZOOM_IN'})
       mapDispatch({type: 'ZOOM_IN'})
       mapDispatch({type: 'ZOOM_IN'})
     }
-  },[selectedMarker, props.data])
+  },[sessionState.sidebar.selected, beerStoreState.beerStores])
 
   return (
     <React.Fragment>
@@ -68,14 +63,14 @@ const Map = props => {
       >
       <TileLayer attribution={mapData.attribution} url={mapData.url} />
         {
-          (isLoading) ?
+          (beerStoreState.isLoading) ?
           <React.Fragment />
           :
-          markers.map((item, index) => (
+          beerStoreState.beerStores.map((item, index) => (
             <Marker
               key={index}
               data={item}
-              selected={selectedMarker === index}
+              selected={sessionState.sidebar.selected === index}
             />
           ))
         }
