@@ -29,10 +29,13 @@ const Marker = props => {
       iconos[1] + '</div></div>',
   });
 
+  let icon = (props.selected) ? icono_focus : icono
+
+
   return (
     <MarkerLeaflet
       position={[props.data.geom.coordinates[1],props.data.geom.coordinates[0]]}
-      icon={props.selected ? icono_focus : icono}
+      icon={icon}
     >
       <Popup closeButton={true}>
         <div className="card">

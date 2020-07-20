@@ -1,5 +1,5 @@
 import React  from 'react'
-import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { useTheme } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
 import List from '@material-ui/core/List'
 import Divider from '@material-ui/core/Divider'
@@ -11,112 +11,85 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import LocalBarIcon from '@material-ui/icons/LocalBar'
 import CircularProgress from '@material-ui/core/CircularProgress'
+import { SessionContext }  from '../context/SessionContext'
+import { StyleContext } from '../context/StyleContext'
+import { BeerStoreContext } from '../context/BeerStoreContext'
+import { useSnackbar } from 'notistack'
 
 
 const SideBar = props => {
 
-  const beerStores = props.data;
-  const isLoading = props.isLoading;
-  const [selectedIndex, setSelectedIndex] = React.useState(-1);
+  const sessionState = React.useContext(SessionContext);
+
+  const beerStoreState = React.useContext(BeerStoreContext)
 
   const theme = useTheme();
 
-  const drawerWidth = props.drawerWidth;
+  const { classes } = React.useContext(StyleContext);
 
-  const useStyles = makeStyles((theme) => ({
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    hide: {
-      display: 'none',
-    },
-    drawer: {
-      background:'black',
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-    drawerPaper: {
-      width: drawerWidth,
-    },
-    drawerHeader: {
-      colorPrimary: 'white',
-      background:'black',
-      display: 'flex',
-      alignItems: 'center',
-      padding: theme.spacing(0, 1),
-      // necessary for content to be below app bar
-      ...theme.mixins.toolbar,
-      justifyContent: 'flex-end',
-    },
-    drawerList:{
-      background:'black'
-    },
-    content: {
-      flexGrow: 1,
-      padding: theme.spacing(3),
-      transition: theme.transitions.create('margin', {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
-      }),
-      marginLeft: -drawerWidth,
-    },
-    contentShift: {
-      transition: theme.transitions.create('margin', {
-        easing: theme.transitions.easing.easeOut,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-      marginLeft: 0,
-    },
-    listItem:{
-      color:'white',
-    },
-    listItemSelected: {
-      background : '#1d436a !important',
-      color: 'white',
-      backgroundColor: "#1d436a !important",
-    },
-    iconList:{
-      color:'white'
-    },
-    spiner: {
-      display: 'flex',
-      flexDirection: 'column',     /* Rotate Axis to Vertical */
-      justifyContent: 'center',    /* Group Children in Center */
-      alignItems: 'center',        /* Group Children in Center (+axis) */
-    },
-  }));
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar()
 
-  const classes = useStyles()
+  React.useEffect(() => {
+    if (beerStoreState.isLoading){
+      enqueueSnackbar('Loading...', {variant: 'info'})
+    }
+    else{
+      if (beerStoreState.error){
+        if (!beerStoreState.isLoading){
+            enqueueSnackbar(beerStoreState.error.toString(), {variant: 'error'})
+        }
+      }
+      if (!beerStoreState.isLoading && (beerStoreState.beerStores.length === 0)){
+            closeSnackbar()
+            enqueueSnackbar('No results...', {variant: 'warning'})
+      }
+      else
+        closeSnackbar()
+    }
+  },[beerStoreState, enqueueSnackbar, closeSnackbar])
+
+  const [prevFilter, setPrevFilter] = React.useState(null)
+
+  React.useEffect(() => {
+    if (sessionState.filter !== null){
+      if (prevFilter !== sessionState.filter){
+        setPrevFilter(sessionState.filter)
+        beerStoreState.getBeerStore(sessionState.filter)
+      }
+    }
+  },[prevFilter, sessionState.filter, beerStoreState])
+
+  const handleSelectedItem = selected => {
+    sessionState.handleSelectedSideBar(selected)
+  }
 
   let content = <div className={classes.spiner}><CircularProgress color="secondary" /></div>
+
 
   return (
     <Drawer
       className={classes.drawer}
       variant="persistent"
       anchor="left"
-      open={props.open}
+      open={sessionState.sidebar.open}
       classes={{
         paper: classes.drawerPaper,
       }}
     >
       <div className={classes.drawerHeader}>
-        <IconButton color="secondary" onClick={props.handleDrawerClose}>
+        <IconButton color="secondary" onClick={() => sessionState.handleCloseSideBar()}>
           {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
         </IconButton>
       </div>
       <Divider />
       <List className={classes.drawerList}>
-        { (isLoading) ? content :
-          beerStores.map((item, index) => (
+        { (beerStoreState.isLoading) ? content :
+          beerStoreState.beerStores.map((item, index) => (
             <ListItem
               button
-              onClick={() => {
-                props.handleSelected(index)
-                setSelectedIndex(index)
-              }}
+              onClick={() => handleSelectedItem(index)}
               key={index}
-              className={selectedIndex === index ? classes.listItemSelected : classes.listItem}
+              className={sessionState.sidebar.selected === index ? classes.listItemSelected : classes.listItem}
             >
               <ListItemIcon><LocalBarIcon className={classes.iconList}/></ListItemIcon>
               <ListItemText primary={item.nombre} />
