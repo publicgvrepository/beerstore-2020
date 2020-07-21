@@ -17,6 +17,7 @@ To make this proyect more good looking, I'll use material ui.
 
 ### VERSION 2 (branch version_2)
 On this version the idea was only work with the react's new version (at 2020). Once again, just the QueSales's beerstores module. So, this project was bootstrapped with Create React App. Unlike the previous version, this time I use the React context API. Simulated the first API recovery data to context. Thereafter, I store the data on the client and manipulate that information in the frontend.
+**Featured added:** add beerstore
 
 ### Installing
 

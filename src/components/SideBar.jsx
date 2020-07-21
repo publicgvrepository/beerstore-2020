@@ -15,6 +15,7 @@ import { SessionContext }  from '../context/SessionContext'
 import { StyleContext } from '../context/StyleContext'
 import { BeerStoreContext } from '../context/BeerStoreContext'
 import { useSnackbar } from 'notistack'
+import { NavLink } from 'react-router-dom'
 
 
 const SideBar = props => {
@@ -36,12 +37,12 @@ const SideBar = props => {
     else{
       if (beerStoreState.error){
         if (!beerStoreState.isLoading){
-            enqueueSnackbar(beerStoreState.error.toString(), {variant: 'error'})
+          enqueueSnackbar(beerStoreState.error.toString(), {variant: 'error'})
         }
       }
       if (!beerStoreState.isLoading && (beerStoreState.beerStores.length === 0)){
-            closeSnackbar()
-            enqueueSnackbar('No results...', {variant: 'warning'})
+        closeSnackbar()
+        enqueueSnackbar('No results...', {variant: 'warning'})
       }
       else
         closeSnackbar()
@@ -81,6 +82,14 @@ const SideBar = props => {
           {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
         </IconButton>
       </div>
+      <Divider />
+      <React.Fragment>
+        <div className={classes.drawerCardList}>
+            <NavLink to="/add-beerstore">
+              <button className={classes.btnNav} type="button">Add Beerstore</button>
+            </NavLink>
+        </div>
+      </React.Fragment>
       <Divider />
       <List className={classes.drawerList}>
         { (beerStoreState.isLoading) ? content :

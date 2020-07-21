@@ -1,11 +1,12 @@
 import React from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Header from './components/Header'
-import SideBar from './components/SideBar'
-import MainContent from './components/MainContent'
 import SessionProvider from './context/SessionContext'
 import BeerStoreProvider from './context/BeerStoreContext'
 import { StyleContext } from './context/StyleContext'
+import BeerStoresPage from './pages/BeerStoresPage'
+import AddBeerStorePage from './pages/AddBeerStorePage'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 
 function App() {
@@ -13,14 +14,18 @@ function App() {
 
   return (
     <SessionProvider>
+      <BrowserRouter>
         <div className={classes.root}>
           <CssBaseline />
           <Header />
           <BeerStoreProvider>
-            <SideBar />
-            <MainContent />
+            <Switch>
+              <Route path="/" component={BeerStoresPage} exact />
+              <Route path="/add-beerstore" component={AddBeerStorePage} exact />
+            </Switch>
           </BeerStoreProvider>
         </div>
+      </BrowserRouter>
     </SessionProvider>
   )
 }
