@@ -1,0 +1,73 @@
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.wrapper {
+  background-color: whitesmoke;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+}
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+.form-row > input {
+  flex: 2;
+}
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+.form-row-button {
+  padding: 10px 0px;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
+.submit-button {
+	background:rgb(9, 141, 59);
+	border-radius:4px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:whitesmoke;
+
+	padding:6px 12px;
+}
+.submit-button:hover {
+	/* background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%); */
+	background-color:rgb(9, 141, 59);
+}
+.submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+.cancel-button {
+	background:red;
+	border-radius:4px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:whitesmoke;
+
+	padding:6px 12px;
+}
+.cancel-button:hover {
+	/* background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%); */
+	background-color:red;
+}
+.cancel-button:active {
+	position:relative;
+	top:1px;
+}

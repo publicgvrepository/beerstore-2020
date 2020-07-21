@@ -87,6 +87,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
     backgroundColor: '#1d436a',
   },
+  drawerCardList:{
+    padding:"25px",
+    background: "#424249",
+    display: "flex",
+    justifyContent: "center",
+  },
   drawerList:{
     background:'black'
   },
@@ -122,6 +128,12 @@ const useStyles = makeStyles((theme) => ({
   mapPane: {
     flex: '1',
     height: '100%',
+  },
+  btnNav:{
+    color:"antiquewhite",
+    background: "#1d436a",
+    padding: "5px 30px",
+    borderRadius: "12px",
   }
 }));
 

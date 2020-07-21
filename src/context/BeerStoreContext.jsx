@@ -3,7 +3,8 @@ import { beerStoresReducer,
   initialBeerStoreState,
   FETCH_BEERSTORES,
   FETCH_BEERSTORES_FULFILLED,
-  FETCH_BEERSTORES_REJECTED }
+  FETCH_BEERSTORES_REJECTED,
+  SET_NEW_BEERSTORES_GEOM }
    from '../reducers/beerStoresReducer'
 import axios from 'axios'
 
@@ -14,8 +15,6 @@ export const BeerStoreContext = React.createContext()
 const BeerStoreProvider = ({children}) => {
 
   const url = 'data/data-beerstore.json'
-
-  // const { beerstores, isLoading, error } = useFetchData('')
 
   const [beerStoresState , dispatch] = React.useReducer(beerStoresReducer, initialBeerStoreState)
 
@@ -33,6 +32,29 @@ const BeerStoreProvider = ({children}) => {
     setTimeout(() => {
         dispatch({type: FETCH_BEERSTORES_FULFILLED, payload:filterData(JSON.parse(catchedData), aFilter)})
     }, 1500)
+  }
+
+  const setBeerStoreGeom = beerstoreGeom => {
+    dispatch({type:SET_NEW_BEERSTORES_GEOM, payload: beerstoreGeom})
+  }
+
+  const postNewBeerStore = (name, geom) => {
+    let beerstore = {
+      id:0,
+      nombre: name.toUpperCase(),
+      geom: {
+        type: 'Point',
+        coordinates: geom.reverse()
+      },
+      direccion:'',
+      localidad: {nombre:''}
+    }
+    const catchedData = JSON.parse(sessionStorage.getItem('myData'))
+
+    beerstore = {...beerstore, id:catchedData.length}
+    catchedData.push(beerstore)
+    sessionStorage.setItem('myData', JSON.stringify(catchedData));
+    dispatch({type: FETCH_BEERSTORES_FULFILLED, payload:catchedData})
   }
 
   React.useEffect(() => {
@@ -59,7 +81,10 @@ const BeerStoreProvider = ({children}) => {
         beerStores: beerStoresState.beerStores,
         isLoading: beerStoresState.isLoading,
         error: beerStoresState.error,
-        getBeerStore: fetchBeerstore
+        newBeerStore:beerStoresState.newBeerStore,
+        getBeerStore: fetchBeerstore,
+        storeNewBeerStoreGeom: setBeerStoreGeom,
+        postNewBeerStore: postNewBeerStore
       }}>
       {children}
     </BeerStoreContext.Provider>
